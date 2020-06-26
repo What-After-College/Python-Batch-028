@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first webpage</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+</head>
+<body>
+    <h1 id="firstelement">hello adwaita</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in veritatis beatae? Animi eum adipisci, ipsam eligendi magni explicabo sapiente accusantium temporibus cumque saepe est nemo deserunt, reiciendis fugit illo?</p>
+    <!-- <h1>hello prakhar</h1>
+    <h1 class="firstclass">hello prakhar</h1>
+    <h1>hello prakhar</h1>
+    <h1 class="firstclass">hello prakhar</h1>
+    <h1>hello prakhar</h1>
+    <h1 class="firstclass">hello prakhar</h1> -->
+    
+    <!-- {% for i in user %}
+        <h1>{{i}}</h1>
+    {% endfor %} -->
+
+    <!-- {% for i in range(1,11) %}
+        <h3>{{2*i}}</h3>
+    {% endfor %} -->
+
+    <!-- {% for i in range(1,11) %}
+        {% if i==3 %}
+            <h3>{{2*i}}</h3>
+        {% else %}
+            <h3>i is not equal to 3</h3>
+        {% endif %}
+    {% endfor %} -->
+
+    {% for i in range(1,100) %}
+    {% if i%2==0 %}
+    <h1>even</h1>
+    {% else %}
+    <h1>odd</h1>
+    {% endif %}
+    {% endfor %}
+
+</body>
+</html>
